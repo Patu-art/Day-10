@@ -27,8 +27,8 @@
   }
   const stage=document.querySelector('.moment-stage');
   const modes={
-    day:{eyebrow:'THE FIRST SIDE / COFFEE BY DAY',title:'COFFEE.\nAND THE\nGOOD STUFF.',description:'Speciality coffee, pastries and records played the way they were meant to be heard. Find a seat and stay a while.',art:'assets/illustrations/coffee-scene.svg',alt:'Original concept illustration of coffee on a wooden table with a record in the background',tag:'DAY / A-SIDE'},
-    night:{eyebrow:'THE FLIP SIDE / LISTENING BY NIGHT',title:'A DRINK.\nAND A\nDEEPER LISTEN.',description:'As the room moves into evening, cocktails, wine and beer meet vintage hi-fi and the records selected for the night.',art:'assets/illustrations/turntable-scene.svg',alt:'Original illustration of a turntable and vinyl record under warm lamplight',tag:'NIGHT / B-SIDE'}
+    day:{eyebrow:'THE FIRST SIDE / COFFEE BY DAY',title:'COFFEE.\nAND THE\nGOOD STUFF.',description:'Speciality coffee, pastries and records played the way they were meant to be heard. Find a seat and stay a while.',art:'assets/photos/02-coffee.png',alt:'Kiku coffee and a croissant on dark green ceramics',tag:'DAY / A-SIDE'},
+    night:{eyebrow:'THE FLIP SIDE / LISTENING BY NIGHT',title:'A DRINK.\nAND A\nDEEPER LISTEN.',description:'As the room moves into evening, cocktails, wine and beer meet vintage hi-fi and the records selected for the night.',art:'assets/photos/03-evening.png',alt:'Three specialty drinks served beside the turntable at Kiku',tag:'NIGHT / B-SIDE'}
   };
   function setMode(mode){
     if(!stage||!modes[mode])return;
