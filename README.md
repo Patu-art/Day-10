@@ -1,31 +1,26 @@
-# DAY 10 — Kiku Hifi (unofficial frontend demo)
+# Day 10 — Kiku Hifi (unofficial frontend demo)
 
-A frontend-only demo for Kiku Hifi, the Japanese-inspired speciality coffee shop and hi-fi listening bar on Gradwell Street in Liverpool. **This is not the venue's official website, and the illustrated brand treatment is conceptual.**
+Live preview: https://patu-art.github.io/Day-10/
 
-## Files
+Front-end-only website concept for Kiku Hifi on Gradwell Street in Liverpool. HTML, CSS and JavaScript are separate and all real venue media are stored locally under `assets/photos/`.
 
-`index.html`, `style.css`, `script.js`, `.nojekyll`, `assets/illustrations/` (original locally authored SVG artwork), `assets/icons/` (original conceptual favicon), `assets/photos/README.md` (asset request brief). The website requires no Node, build tool, backend or account.
+## User-supplied venue assets
 
-Open `index.html` with VS Code Live Server or upload these files at the root of a public GitHub repo with GitHub Pages set to `main` / root. All artwork paths are relative; no stock photo hotlinks or fonts/CDN are required. On small screens there is a working hamburger menu; day/night buttons switch **only confirmed category-level information**, not an invented live playlist or reservation function.
+The six files uploaded by the user were imported directly to the GitHub repository in their supplied sequence; SHA-256 hashes were checked during transfer:
 
-## Business research — 19 September 2026
+1. `assets/photos/01-interior.png` — listening room, records, turntable and people. Hero image.
+2. `assets/photos/02-coffee.png` — coffee and pastry. Daytime tab.
+3. `assets/photos/03-evening.png` — three drinks beside the turntable. After-dark tab.
+4. `assets/photos/04-sound.png` — DJ mixer and controls. Sound section.
+5. `assets/photos/05-exterior.png` — Kiku storefront. Visit section.
+6. `assets/photos/06-logo.png` — provided official vertical Kiku artwork. Visit, footer, and favicon.
 
-- Kiku Hifi opened in July 2026 and offers speciality coffee during the day with hi-fi and a listening bar in the evening.
-- General visitor location: Gradwell Street, Ropewalks, Liverpool L1 4JH.
-- Many venue guides list 40 Gradwell Street; Liverpool council's licensing register lists Kiku at Lever House, 16 Gradwell Street. **Confirm the precise public entrance/address directly with the business** before adding a house number. Directions link searches the business name instead.
-- As of research, published July opening hours are 9am–11pm Sun–Thu / 9am–midnight Fri–Sat, but this demo does not represent them as current September hours. Instagram is the source for latest visitor details and programmes.
-- This demo does **not** claim Kiku sells records, has a current resident DJ on a named date, accepts reservations or has particular menu items/prices.
+The original illustration files remain in `assets/illustrations/` as unused concept-development assets. They are no longer displayed by the website.
 
-Sources:
-- https://www.skiddle.com/news/all/New-Japanese-inspired-bar-and-caf--has-opened-in-Liverpool-/61840/
-- https://l1local.co.uk/guides/kiku-liverpool-hifi-listening-bar/
-- https://licensing.liverpool.gov.uk/PAforLalpacLIVE/1/LicensingActPremises/Search?Column=OPR_PREM_ADDRESS&Direction=Descending&page=68
-- https://www.instagram.com/kikuhifi/
+## Publishing and client verification
 
-## Artwork and permissions
+This is an unofficial concept, not the official website. Before outreach or official use, ask Kiku to confirm permissions for the photography, identifiable people, and logo. Confirm the precise customer entrance/address, current service hours, menu and event schedule directly with the venue.
 
-Every SVG is originally made for the *concept*, not an official Kiku asset or actual view inside Kiku. Obtain explicit permission to use real brand photos/logo before preparing an owner-facing, public final website. The `assets/photos/README.md` includes exact replacement categories. Avoid passing concept artwork off as the actual room. Remove concept disclosure only if the business approves official adoption.
+A note on address: public listings differ on the street number. The website uses Gradwell Street, Liverpool, and a map search by business name instead of presenting an unverified house number.
 
-## Final QA
-
-Tested locally for HTML/JS syntax, all local links and files, desktop/tablet/mobile overflow, keyboard navigation, working tabs and responsive menu. Check GitHub Pages publishing separately after upload. Contact permission and updated address/hours remain outstanding.
+Run locally by opening `index.html` with Live Server. GitHub Pages serves `main` / root, with no backend or build step.
