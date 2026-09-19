@@ -21,3 +21,122 @@
 @media(max-width:900px){.visit-main{grid-template-columns:minmax(0,1fr)}}
 @media(max-width:365px){.visit h2{font-size:clamp(37px,11vw,43px)}}
 @media(max-width:640px){.sound-copy h2{font-size:clamp(39px,10.5vw,62px)}}
+
+
+/* DAY 10 V2 — compact hospitality-first layout.
+   These conceptual visuals are deliberately secondary until licensed venue photos arrive. */
+:root{--ink:#1e201d;--ink2:#282a23;--paper:#eee8dc;--cream:#fbf7ed;--brass:#bda17a;--edge:clamp(20px,4.6vw,74px);--body:Arial,Helvetica,sans-serif;--ui:Arial,Helvetica,sans-serif;--display:Georgia,"Times New Roman",serif}
+body{font:15px/1.65 var(--body)}
+.site-header{min-height:76px;padding-top:12px;padding-bottom:12px;background:#171a16;border-color:rgba(240,231,213,.16)}
+.brand{gap:12px}.brand-name{font:600 28px/1 Georgia,serif;letter-spacing:-.055em}.brand-name em{font-style:italic;letter-spacing:-.06em}
+.brand-sublabel{margin-left:3px;padding-left:14px;border-left:1px solid rgba(240,231,213,.36);color:#d5c5a7;font:700 9px/1.4 var(--ui);letter-spacing:.12em;max-width:100px}
+.main-nav>a{font:600 12px/1.3 var(--ui);letter-spacing:.005em}
+.main-nav .nav-cta{padding:10px 13px}
+.hero{min-height:clamp(570px,74vh,780px);background:var(--ink)}
+.hero-visual{inset:0 0 0 auto;width:54%;z-index:-3}
+.hero-visual img{width:100%;height:100%;object-fit:cover;object-position:62% center}
+.hero-shade{background:linear-gradient(90deg,#1b1e19 0%,#1b1e19 39%,rgba(27,30,25,.86) 51%,rgba(27,30,25,.08) 78%,transparent 100%)}
+.hero-inner{min-height:inherit;padding-top:88px;padding-bottom:32px;justify-content:center}
+.hero-content{max-width:49%}
+.hero-overline{font-size:10px}
+.hero h1{margin:21px 0;font:500 clamp(48px,5.5vw,89px)/1.02 var(--display);letter-spacing:-.065em;text-transform:none}
+.hero h1 em{font-weight:500;font-style:italic;color:#dcc19c}
+.hero-description{max-width:390px;color:#e8e1d3;font:15px/1.75 var(--body)}
+.hero-actions{gap:18px;margin-top:23px}
+.button{min-height:47px;padding:11px 16px;letter-spacing:0;font-size:12px}
+.hero-edge{padding-top:28px;font-size:9px}
+.section{padding-top:clamp(68px,7vw,104px);padding-bottom:clamp(68px,7vw,104px)}
+.index-label{font-size:10px;letter-spacing:.1em}
+.moments{border:0}
+.section-heading{align-items:end;gap:25px}
+.section-heading h2,.sound-copy h2,.visit h2{font:500 clamp(45px,4.6vw,73px)/1.05 var(--display);letter-spacing:-.055em}
+.section-heading h2 em,.sound-copy h2 em,.visit h2 em{font-style:italic;font-weight:500;letter-spacing:-.05em}
+.section-heading>p{font:15px/1.7 var(--body);max-width:360px}
+.moment-control{margin-top:30px}
+.moment-tab{min-height:53px;padding:12px 22px;font:600 clamp(16px,1.6vw,22px)/1.3 var(--display);letter-spacing:-.03em}
+.moment-stage{grid-template-columns:minmax(0,1fr) minmax(0,.95fr);min-height:410px;margin-top:15px}
+.moment-copy{padding:clamp(29px,4vw,58px)}
+.moment-copy h3{font:500 clamp(37px,4vw,62px)/1.05 var(--display);letter-spacing:-.045em;margin:17px 0;white-space:normal}
+.moment-copy h3 em{font-style:italic;color:#8e6249}
+.moment-copy>p:not(.overline){font:15px/1.7 var(--body)}
+.moment-art{min-height:410px}
+.art-tag{font-size:9px}
+.sound-section{grid-template-columns:1.06fr .94fr;min-height:490px}
+.sound-image{min-height:490px}
+.sound-copy{padding:55px clamp(28px,5vw,80px)}
+.sound-copy h2{margin:17px 0}
+.sound-copy>p:not(.index-label){font:15px/1.7 var(--body)}
+.sound-rule{margin:19px 0}
+.sound-facts{gap:12px;margin-bottom:23px}
+.sound-facts strong{font:14px/1.5 var(--body)}
+.visit-main{gap:40px;align-items:start}
+.visit h2{font-size:clamp(43px,4.8vw,75px)}
+.visit-main>div:first-child>p{font:17px/1.65 var(--body);margin-top:23px}
+.visit-symbol{display:none}
+.visit-aside h3{margin:0 0 13px;font:600 23px/1.25 var(--display);letter-spacing:-.03em}
+.visit-aside p{font:14px/1.6 var(--body)}
+.footer{padding-top:30px;padding-bottom:20px}
+.footer-logo{font:600 28px/1 var(--display)}
+.footer-disclaimer{margin-top:22px;font-size:10px}
+@media(max-width:1130px){
+ .hero-content{max-width:53%}
+ .hero h1{font-size:clamp(46px,5.8vw,70px)}
+ .sound-copy h2{font-size:clamp(39px,5vw,58px)}
+}
+@media(max-width:900px){
+ .site-header{min-height:72px}
+ .main-nav{top:71px}
+ .hero{min-height:610px}
+ .hero-inner{padding-top:110px}
+ .hero-content{max-width:60%}
+ .hero-visual{width:60%}
+ .hero-shade{background:linear-gradient(90deg,#1b1e19 0%,rgba(27,30,25,.96) 37%,rgba(27,30,25,.65) 61%,rgba(27,30,25,.25) 100%)}
+ .hero h1{font-size:clamp(53px,7vw,75px)}
+ .moment-stage{min-height:390px}
+ .moment-art{min-height:390px}
+ .sound-section{grid-template-columns:minmax(0,1fr);min-height:0}
+ .sound-image{min-height:360px;height:390px}
+ .sound-copy{padding:53px var(--edge)}
+ .sound-copy h2{font-size:clamp(47px,7vw,67px)}
+ .visit-main{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+ .brand-name{font-size:25px}
+ .brand-sublabel{font-size:8px;max-width:90px}
+ .site-header{min-height:67px}
+ .main-nav{top:67px}
+ .hero{min-height:0;padding-top:315px}
+ .hero-visual{inset:0 0 auto 0;width:100%;height:345px}
+ .hero-visual img{object-position:62% 42%}
+ .hero-shade{inset:0;background:linear-gradient(180deg,rgba(24,27,22,.17) 0%,rgba(24,27,22,.08) 24%,#1b1e19 43%,#1b1e19 100%)}
+ .hero-inner{min-height:0;padding:15px var(--edge) 29px}
+ .hero-content{max-width:100%}
+ .hero h1{font-size:clamp(50px,11vw,68px);margin:15px 0}
+ .hero-description{max-width:450px;font-size:15px}
+ .hero-actions{margin-top:20px}
+ .hero-edge{margin-top:0;padding-top:29px}
+ .section{padding-top:63px;padding-bottom:63px}
+ .section-heading{display:block}
+ .section-heading h2{font-size:clamp(41px,9vw,59px);margin-top:11px}
+ .section-heading>p{margin-top:15px}
+ .moment-control{margin-top:24px}
+ .moment-tab{font-size:17px;padding:11px 13px}
+ .moment-stage{display:flex;flex-direction:column;min-height:0}
+ .moment-copy{padding:30px 23px}
+ .moment-copy h3{font-size:clamp(37px,9vw,51px);margin:17px 0}
+ .moment-art{height:clamp(260px,77vw,390px);min-height:260px}
+ .sound-image{height:310px;min-height:310px}
+ .sound-copy{padding:45px var(--edge)}
+ .sound-copy h2{font-size:clamp(41px,9vw,59px)}
+ .sound-facts div{grid-template-columns:95px 1fr;gap:12px}
+ .visit h2{font-size:clamp(40px,9vw,59px)}
+ .visit-main>div:first-child>p{font-size:16px}
+}
+@media(max-width:365px){
+ .brand-name{font-size:21px}
+ .brand-sublabel{font-size:7px;max-width:70px;padding-left:9px}
+ .hero h1{font-size:clamp(44px,11vw,51px)}
+ .moment-copy h3{font-size:39px}
+ .sound-copy h2{font-size:clamp(38px,10vw,45px)}
+ .visit h2{font-size:clamp(36px,9.8vw,44px)}
+}
