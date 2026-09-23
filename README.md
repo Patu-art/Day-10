@@ -1,6 +1,6 @@
 # Day 10 — Kiku Hifi (unofficial frontend demo)
 
-Live preview: https://patu-art.github.io/Day-10/
+[Live preview](https://patu-art.github.io/Day-10/) · [Portfolio](https://patu-art.github.io/Portfolio/) · [Challenge log](https://patu-art.github.io/Portfolio/challenge.html)
 
 Front-end-only website concept for Kiku Hifi on Gradwell Street in Liverpool. HTML, CSS and JavaScript are separate and all real venue media are stored locally under `assets/photos/`.
 
